@@ -1,0 +1,65 @@
+/*
+ * Custom CSS for Team India Cricket Hub
+ * Using Indian Cricket inspired colors: Blue and Saffron/Orange
+ * This file adds custom styling over Bootstrap 5.
+ */
+
+/* 1. Global Settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+/* 2. Custom Color Palette (Indian Cricket Theme) */
+.bg-primary-custom {
+    background-color: #000080 !important; /* Deep Navy Blue */
+}
+
+.text-primary-custom {
+    color: #000080 !important;
+}
+
+.btn-accent {
+    background-color: #FF9933; /* Saffron/Orange Accent */
+    border-color: #FF9933;
+    color: #000;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-accent:hover {
+    background-color: #e08022;
+    border-color: #e08022;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* 3. Card Styling for Realism */
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 4. Hero Section - CRICKET STADIUM BACKGROUND */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    /* Image: View of a green cricket stadium/pitch */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1549725807-68b20108316a?fit=crop&q=80&w=1600&h=600') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* 5. Teams Page Background */
+.teams-bg {
+    background-color: #f4f6f9; /* Light grey texture */
+}
+
+/* 6. Footer Adjustment */
+footer {
+    border-top: 5px solid #FF9933 !important; /* Saffron Accent line */
+}
